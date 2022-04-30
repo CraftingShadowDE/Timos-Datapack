@@ -1,0 +1,1 @@
+give @p minecraft:fishing_rod{grapple:1b,Unbreakable:1b,Damage:0,HideFlags:63,display:{Lore:['{"text":"Travel around in style ","color":"gray","italic":false}','{"text":"using this Grappling Hook.","color":"gray","italic":false}','{"text":"2 Second Cooldown","color":"dark_gray","italic":false}'],Name:'{"text":"Grappling Hook","color":"green","italic":false}'}} 1

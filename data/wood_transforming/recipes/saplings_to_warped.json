@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "minecraft:saplings_all"
+    },
+    "result": "minecraft:warped_fungus",
+    "count": 1
+}

@@ -1,0 +1,1 @@
+execute as @a[nbt={SelectedItem:{id:"minecraft:knowledge_book"}}] at @p as @e[type=minecraft:villager,nbt={VillagerData:{profession:"minecraft:nitwit"}},distance=..3] at @s run data merge entity @s {VillagerData:{level:1,profession:NULL}}

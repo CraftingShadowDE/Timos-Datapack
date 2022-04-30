@@ -1,0 +1,1 @@
+give @p minecraft:leather_boots{Unbreakable:1b,Damage:0,dj:1b,display:{color:9891583,Name:'{"text":"Double Jump Boots","color":"blue","bold":true,"italic":false}'}} 1

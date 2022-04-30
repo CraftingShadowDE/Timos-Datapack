@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#E#",
+        "#N#",
+        "#D#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:iron_bars"
+        },
+        "E": {
+            "item": "minecraft:enchanted_golden_apple"
+        },
+        "N": {
+            "item": "minecraft:nether_star"
+        },
+        "D": {
+            "item": "minecraft:diamond"
+        }
+    },
+    "result": {
+        "item": "minecraft:spawner",
+        "count": 1
+    },
+    "group": "spawner"
+
+}

@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#L#",
+        "L L",
+        "LLL"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:string"
+        },
+        "L": {
+            "tag": "crafting:leather_rabbit"
+        }
+    },
+    "result": {
+        "item": "minecraft:bundle",
+        "count": 1
+    }
+}

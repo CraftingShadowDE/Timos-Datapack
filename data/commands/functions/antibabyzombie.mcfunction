@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:zombie,nbt={IsBaby:1b}] at @s run data merge entity @s {IsBaby:0b}

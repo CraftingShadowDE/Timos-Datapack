@@ -1,0 +1,1 @@
+team join HiddenNickname @a[team=]

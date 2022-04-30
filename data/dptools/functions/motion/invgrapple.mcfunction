@@ -1,0 +1,2 @@
+execute if entity @s[nbt={SelectedItem:{tag:{grapple:1b}}}] run function dptools:motion/grapple/main
+execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{grapple:1b}}]}] run function dptools:motion/grapple/main

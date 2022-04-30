@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#E#",
+        "EGE",
+        "#E#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:leather"
+        },
+        "E": {
+            "item": "minecraft:emerald"
+        },
+        "G": {
+            "item": "minecraft:golden_apple"
+        }
+    },
+    "result": {
+        "item": "minecraft:pig_spawn_egg",
+        "count": 1
+    }
+}

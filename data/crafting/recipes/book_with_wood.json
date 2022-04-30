@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "___",
+        "PPP",
+        "___"
+    ],
+    "key": {
+        "_": {
+            "tag": "minecraft:wooden_slabs"
+        },
+        "P": {
+            "item": "minecraft:paper"
+        }
+    },
+    "result": {
+        "item": "minecraft:book",
+        "count": 1
+    }
+}

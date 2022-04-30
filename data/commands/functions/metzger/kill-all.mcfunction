@@ -1,0 +1,1 @@
+kill @e[type=minecraft:villager,tag=villager_metzger]

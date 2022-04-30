@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:player_head"
+    },
+    "result": "minecraft:coal",
+    "count": 1
+}

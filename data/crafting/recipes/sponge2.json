@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:wet_sponge"
+    },
+    "result": "minecraft:sponge",
+    "count": 1
+}

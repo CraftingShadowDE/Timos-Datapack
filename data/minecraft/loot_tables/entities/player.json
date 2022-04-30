@@ -1,0 +1,64 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:bone",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:beef",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 5
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "translate": "Raw Player Meat",
+                  "bold": "false",
+                  "italic": "false",
+                  "underlined": "false",
+                  "strikethrough": "false",
+                  "obfuscated": "false"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

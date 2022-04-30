@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "crafting:regrowing_stuff"
+    },
+    "result": "minecraft:bamboo",
+    "count": 1
+}

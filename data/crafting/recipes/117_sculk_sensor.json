@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "E",
+        "D"
+    ],
+    "key": {
+        "#": {
+            "tag": "crafting:saplings"
+        },
+        "E": {
+            "item": "minecraft:emerald_block"
+        },
+        "D": {
+            "item": "minecraft:dirt"
+        }
+    },
+    "result": {
+        "item": "minecraft:sculk_sensor",
+        "count": 1
+    }
+}

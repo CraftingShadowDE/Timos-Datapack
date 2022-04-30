@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "minecraft:saplings_all"
+    },
+    "result": "minecraft:acacia_sapling",
+    "count": 1
+}

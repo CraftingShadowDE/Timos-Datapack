@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "tag": "crafting:wood_logs-stripped_wood_logs"
+        }
+    },
+    "result": {
+        "item": "minecraft:paper",
+        "count": 12
+    }
+}

@@ -1,0 +1,2 @@
+#Hippity Hoppity give out of my Blockity
+execute unless block ~ ~ ~ air unless block ~ ~ ~ cave_air unless block ~ ~ ~ tall_grass unless block ~ ~ ~ grass unless block ~ ~ ~ fern unless block ~ ~ ~ large_fern unless block ~ ~ ~ snow run tp @s ~ ~1 ~

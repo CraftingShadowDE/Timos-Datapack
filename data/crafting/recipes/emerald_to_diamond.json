@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:emerald_block",
+        "count": 5
+    },
+    "result": "minecraft:diamond",
+    "count": 1
+}

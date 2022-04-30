@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#G#",
+        "GEG",
+        "#G#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:torch"
+        },
+        "G": {
+            "item": "minecraft:glowstone_dust"
+        },
+        "E": {
+            "item": "minecraft:enchanted_golden_apple"
+        }
+    },
+    "result": {
+        "item": "minecraft:light",
+        "count": 8
+    }
+}

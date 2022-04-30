@@ -1,0 +1,1 @@
+execute as @e[type=wandering_trader] at @s run data merge entity @s {CustomNameVisible:1b,CustomName:'{"text":"Spion","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}'}

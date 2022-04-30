@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#G#",
+        "DAD",
+        "gEg"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:emerald"
+        },
+        "G": {
+            "item": "minecraft:golden_helmet"
+        },
+        "D": {
+            "item": "minecraft:diamond"
+        },
+        "A": {
+            "item": "minecraft:armor_stand"
+        },
+        "g": {
+            "item": "minecraft:gold_ingot"
+        },
+        "E": {
+            "item": "minecraft:enchanted_golden_apple"
+        }
+    },
+    "result": {
+        "item": "minecraft:totem_of_undying",
+        "count": 4
+    }
+}

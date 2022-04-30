@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "gAg",
+        "gGg",
+        "_g_"
+    ],
+    "key": {
+        "g": {
+            "item": "minecraft:gold_ingot"
+        },
+        "A": {
+            "tag": "crafting:amethyst-lapis"
+        },
+        "G": {
+            "item": "minecraft:glass_pane"
+        },
+        "_":{
+                "tag": "minecraft:wooden_slabs"
+            }
+        
+    },
+    "result": {
+        "item": "minecraft:spyglass",
+        "count": 1
+    }
+}

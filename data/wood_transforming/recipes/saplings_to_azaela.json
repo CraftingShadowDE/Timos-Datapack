@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "minecraft:saplings_all"
+    },
+    "result": "minecraft:azalea",
+    "count": 1
+}

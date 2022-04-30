@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#G#",
+        "iEi",
+        " E "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:diamond"
+        },
+        "G": {
+            "item": "minecraft:golden_apple"
+        },
+        "i": {
+            "item": "minecraft:iron_ingot"
+        },
+        "E": {
+            "item": "minecraft:emerald"
+        }
+    },
+    "result": {
+        "item": "minecraft:trident",
+        "count": 1
+    }
+}

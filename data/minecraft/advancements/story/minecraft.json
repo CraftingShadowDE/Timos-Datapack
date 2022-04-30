@@ -1,0 +1,40 @@
+{
+    "parent": "minecraft:story/root",
+    "display": {
+        "title": {
+            "text": "Minecraft",
+            "color": "gold",
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false
+        },
+        "description": {
+            "text": "1. Achievement",
+            "color": "light_purple",
+            "italic": false
+        },
+        "icon": {
+            "item": "minecraft:grass_block"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "InventoryChanges": {
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "requirements": [
+        [
+            "InventoryChanges"
+        ]
+    ],
+    "rewards": {
+        "experience": 10,
+        "function": "commands:recipes"
+    }
+}

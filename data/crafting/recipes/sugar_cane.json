@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "crafting:regrowing_stuff"
+    },
+    "result": "minecraft:sugar_cane",
+    "count": 1
+}
