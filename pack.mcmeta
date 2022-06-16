@@ -1,1 +1,7 @@
-{"pack":{"pack_format":8,"description":"Timos geilo Pack"}}
+{
+   "pack": {
+      "pack_format": 10,
+      "description": "Timos Datapack",
+	  "__pack_format-wiki-url": "https://minecraft.fandom.com/wiki/Pack_format"
+   }
+}
