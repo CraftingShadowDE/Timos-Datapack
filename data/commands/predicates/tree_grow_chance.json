@@ -1,0 +1,5 @@
+{
+  "__comment":"/execute if predicate commands:20_percent_chance",
+  "condition": "minecraft:random_chance",
+  "chance": 0.2
+}
