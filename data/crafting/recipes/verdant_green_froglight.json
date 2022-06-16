@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#G#",
+        "GSG",
+        "#G#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:mangrove_roots"
+        },
+        "G": [
+            {
+                "item": "minecraft:green_stained_glass_pane"
+            },
+            {
+                "item": "minecraft:lime_stained_glass_pane"
+            },
+            {
+                "item": "minecraft:cyan_stained_glass_pane"
+            }
+        ],
+        "S": {
+            "item": "minecraft:sea_lantern"
+        }
+    },
+    "result": {
+        "item": "minecraft:verdant_froglight",
+        "count": 8
+    }
+}
