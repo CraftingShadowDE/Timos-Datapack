@@ -1,0 +1,14 @@
+The most part of this Datapack were created by me. There are some things I downloaded and added because I wanted to edit something and always have tham included when using this datapack. You can find out if something was made by me or someone else by finding out in which folder it is located ( .\data\XXX\[...] ). If XXX matches one of the following, it was not made by me.
+
+1. dptools: 
+Description: dptools adds a grappling hook, double jump boots and infinity jump boots. 
+What I changed: I changed the recipes and added functions to give the item to the player executing it.
+Original download: http://www.mediafire.com/file/10izha8ans3n66i/file (tested on June 17, 2022)
+Author: TheMonkeyRaider on YouTube: https://www.youtube.com/channel/UC5F8baB1lllmlf7sIp1b7-g (tested June 17, 2022)
+Video in which he shows how it works: https://www.youtube.com/watch?v=txE2ssHz9rw&list=PLJWddryN71z2njV8kwycNJraKMrH5wLI6&index=3 (tested June 17, 2022)
+
+2. armor_statues
+Description: armor_statues adds an easy way to change armor stands positions in survival mode. You can also make item frames invisible and lockable.
+What I changed: Automatically enable the option that players can lock their item frames (so they can't be rotated) and enable UUID lock (so if a player locks an armor stand, only he/she or an admin can unlock it). Berfore, this was available but you have to enable it yourself. You can still disable it in-game. (If you "/reload" the pack or execute "/function commands:loadpack", it will re-enable it again)
+Original download: https://www.curseforge.com/minecraft/customization/armor-statues-datapack/download/3372729 (tested June 17, 2022)
+CurseForge project: https://www.curseforge.com/minecraft/customization/armor-statues-datapack (tested June 17, 2022)
