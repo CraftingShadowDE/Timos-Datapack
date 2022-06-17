@@ -1,6 +1,5 @@
 # Timos-Datapack
-GERMAN DATAPCK - NO ENGLISH TRANSLATION
-For credits, watch CREDITS.txt
+GERMAN DATAPCK - NO ENGLISH TRANSLATION; for credits, watch CREDITS.txt
 
 Ein Datapack für Minecraft
 
