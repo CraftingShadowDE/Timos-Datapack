@@ -30,4 +30,4 @@ execute store result score #gametime timo_data run time query gametime
 
 execute if score #dptools repeat matches 1 run function dptools:main
 
-execute if score #SaplingGrow repeat matches 1 run function commands:SaplingGrow/main
+execute if score #SaplingGrow repeat matches 1 run function commands:sapling-grow/main
