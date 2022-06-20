@@ -1,9 +1,9 @@
 {
     "type": "minecraft:stonecutting",
     "ingredient": {
-        "tag": "spawners:spawn_eggs"
+        "item": "minecraft:pig_spawn_egg"
     },
-    "result": "minecraft:pig_spawn_egg",
+    "result": "minecraft:frog_spawn_egg",
     "group": "spawn_eggs",
     "count": 1
 }

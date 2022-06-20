@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "crafting:wood_logs-stripped_wood_logs"
+    },
+    "result": "minecraft:mangrove_wood",
+    "count": 1
+}

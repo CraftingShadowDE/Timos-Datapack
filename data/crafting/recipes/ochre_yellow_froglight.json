@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#Y#",
+        "YSY",
+        "#Y#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:mangrove_roots"
+        },
+        "Y": {
+            "item": "minecraft:yellow_stained_glass_pane"
+        },
+        "S": {
+            "item": "minecraft:sea_lantern"
+        }
+    },
+    "result": {
+        "item": "minecraft:ochre_froglight",
+        "count": 8
+    }
+}
