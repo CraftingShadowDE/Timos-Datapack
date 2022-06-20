@@ -7,7 +7,7 @@
     ],
     "key": {
         "#": {
-            "tag": "crafting:saplings"
+            "tag": "minecraft:saplings_all"
         },
         "E": {
             "item": "minecraft:emerald_block"
