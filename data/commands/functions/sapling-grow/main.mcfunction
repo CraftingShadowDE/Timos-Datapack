@@ -176,5 +176,13 @@ execute as @e[type=minecraft:area_effect_cloud,tag=SaplingGrowActor,nbt={Age:5}]
 #fix dark_oak (at Age 6)
 execute as @e[type=minecraft:area_effect_cloud,tag=SaplingGrowActor,nbt={Age:6}] at @s if score @s timo_actorType matches 2 if score @s timo_growSuccess matches 1 if score @s timo_sapling-type matches 6 run fill ~ ~ ~ ~1 ~ ~1 dark_oak_log[axis=y]
 
+#if unsuccessful, effects to show that (at Age 10)
+#effects at 1x1's
+execute as @e[type=minecraft:area_effect_cloud,tag=SaplingGrowActor,nbt={Age:10}] at @s if score @s timo_actorType matches 1 if score @s timo_growSuccess matches 0 run particle minecraft:flame ~ ~0.25 ~ 0.25 0.25 0.25 0 50 force
+execute as @e[type=minecraft:area_effect_cloud,tag=SaplingGrowActor,nbt={Age:10}] at @s if score @s timo_actorType matches 1 if score @s timo_growSuccess matches 0 run playsound minecraft:block.note_block.didgeridoo master @a ~ ~ ~ 0.625 0
+#effects at 2x2's
+execute as @e[type=minecraft:area_effect_cloud,tag=SaplingGrowActor,nbt={Age:10}] at @s if score @s timo_actorType matches 2 if score @s timo_growSuccess matches 0 positioned ~0.5 ~ ~0.5 run particle minecraft:flame ~ ~0.25 ~ 0.25 0.25 0.25 0 50 force
+execute as @e[type=minecraft:area_effect_cloud,tag=SaplingGrowActor,nbt={Age:10}] at @s if score @s timo_actorType matches 2 if score @s timo_growSuccess matches 0 positioned ~0.5 ~ ~0.5 run playsound minecraft:block.note_block.didgeridoo master @a ~ ~ ~ 0.625 0
+
 #kill Actors at age 30 (=> 1.5 second cooldown)
 execute as @e[type=minecraft:area_effect_cloud,tag=SaplingGrowActor,nbt={Age:30}] at @s run kill @s
