@@ -55,3 +55,6 @@ execute unless score #dptools repeat matches 0 run scoreboard players set #dptoo
 #SaplingGrow
 function commands:sapling-grow/load
 execute unless score #SaplingGrow repeat matches 0 run scoreboard players set #SaplingGrow repeat 1 
+
+#trigger for time function
+scoreboard objectives add show_time trigger "Ingamezeit anzeigen"

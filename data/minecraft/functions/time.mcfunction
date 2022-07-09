@@ -1,1 +1,3 @@
+scoreboard players reset @s show_time
+
 tellraw @a ["",{"text":"Aktuelle Zeit (abgefragt von ","bold":true,"underlined":true,"color":"dark_green"},{"selector":"@p","italic":true,"underlined":true,"color":"dark_green"},{"text":")","bold":true,"underlined":true,"color":"dark_green"},"\n",{"text":"Anzahl gezählter Tage: ","bold":true,"color":"dark_red"},"\n",{"score":{"name":"#day","objective":"timo_data"},"color":"red"},"\n",{"text":"Aktuelle Tageszeit in Ticks: ","bold":true,"color":"dark_red"},"\n",{"score":{"name":"#daytime","objective":"timo_data"},"color":"red"},{"text":" (ein Tag hat 24000 Ticks)","color":"red"},"\n",{"text":"Gesamtzeit in Ticks: ","bold":true,"color":"dark_red"},"\n",{"score":{"name":"#gametime","objective":"timo_data"},"color":"red"}]
