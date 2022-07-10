@@ -53,3 +53,11 @@ execute as @a at @s if score @s show_time matches ..-1 run function minecraft:ti
 execute if score #dptools repeat matches 1 run function dptools:main
 
 execute if score #SaplingGrow repeat matches 1 run function commands:sapling-grow/main
+
+#trigger for nightvision
+scoreboard players enable @a toggle_night-vision
+execute as @a at @s if score @s toggle_night-vision matches 1 run effect give @s night_vision 1000000 255 true
+execute as @a at @s if score @s toggle_night-vision matches 2.. run effect clear @s night_vision
+execute as @a at @s if score @s toggle_night-vision matches ..-1 run effect clear @s night_vision
+execute as @a at @s if score @s toggle_night-vision matches 2.. run scoreboard players set @s toggle_night-vision 0
+execute as @a at @s if score @s toggle_night-vision matches ..-1 run scoreboard players set @s toggle_night-vision 0

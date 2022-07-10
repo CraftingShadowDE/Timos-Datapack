@@ -65,3 +65,6 @@ execute unless score #SaplingGrow repeat matches 0 run scoreboard players set #S
 
 #trigger for time function
 scoreboard objectives add show_time trigger "Ingamezeit anzeigen"
+
+#trigger for nightvision
+scoreboard objectives add toggle_night-vision trigger "Nachtsicht umschalten"
