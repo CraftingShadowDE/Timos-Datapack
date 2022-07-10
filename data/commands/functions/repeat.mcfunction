@@ -61,3 +61,10 @@ execute as @a at @s if score @s toggle_night-vision matches 2.. run effect clear
 execute as @a at @s if score @s toggle_night-vision matches ..-1 run effect clear @s night_vision
 execute as @a at @s if score @s toggle_night-vision matches 2.. run scoreboard players set @s toggle_night-vision 0
 execute as @a at @s if score @s toggle_night-vision matches ..-1 run scoreboard players set @s toggle_night-vision 0
+
+#create trigger for time function
+scoreboard players enable @a kill-me
+execute as @a at @s if score @s kill-me matches 1.. run kill @s
+execute as @a at @s if score @s kill-me matches ..-1 run kill @s
+execute as @a at @s if score @s kill-me matches 1.. run scoreboard players set @s kill-me 0
+execute as @a at @s if score @s kill-me matches ..-1 run scoreboard players set @s kill-me 0
