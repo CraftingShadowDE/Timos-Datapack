@@ -2,6 +2,12 @@
 scoreboard objectives add repeat dummy
 scoreboard objectives add timo_data dummy
 
+#convert daytime in ticks to daytime in time
+scoreboard players set #time_6 timo_data 6
+scoreboard players set #time_1000 timo_data 1000
+scoreboard players set #time_60 timo_data 60
+scoreboard players set #time_24000 timo_data 24000
+
 #keepInvetory true in all dimensions
 execute unless score #keepInventory repeat matches 0 run scoreboard players set #keepInventory repeat 1
 execute unless score #keepInventory repeat matches 0 in minecraft:overworld run gamerule keepInventory true
@@ -34,7 +40,8 @@ data modify storage customizable_armor_stands:settings as_admin.uuid_lock set va
 
 #position-engine
 function commands:position-engine/prepare
-execute unless score #position-engine repeat matches 1 run scoreboard players set #position-engine repeat 0
+execute unless score #position-engine repeat matches 0 run scoreboard players set #position-engine repeat 1
+scoreboard objectives add toggle_position-engine trigger "Position-Engine umschalten"
 
 #spione
 execute unless score #spione repeat matches 0 run scoreboard players set #spione repeat 1
