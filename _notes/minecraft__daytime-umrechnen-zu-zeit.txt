@@ -1,0 +1,15 @@
+Zeit von 0-24.000 ticks
+bei 6.000 ticks ist es 12:00 Uhr
+
+ticks1 = time query daytime
+wenn ticks1 größer oder gleich 18.000 ist, dann gilt: ticks2 = ticks1-24.000
+ansonsten gilt: ticks2 = ticks1
+ticks3 = ticks2 / 1.000
+Stunden = ticks3 + 6
+
+ticks4 = ticks1 / 1.000
+ticks5 = ticks4 * 1.000
+ticks6 = ticks1 - ticks5
+1 Einheit bei ticks6 = (60/1.000) Minuten
+ticks7 = ticks6 * 60
+Minuten = ticks7 / 1.000
