@@ -45,6 +45,11 @@ execute store result score #time_ticks1c timo_data run scoreboard players get #d
 execute store result score #time_ticks6 timo_data run scoreboard players operation #time_ticks1c timo_data -= #time_ticks5 timo_data
 execute store result score #time_ticks7 timo_data run scoreboard players operation #time_ticks6 timo_data *= #time_60 timo_data
 execute store result score #time_minutes timo_data run scoreboard players operation #time_ticks7 timo_data /= #time_1000 timo_data
+#store the ingametime as normal time in a storage
+execute if score #time_hours timo_data matches 10..23 if score #time_minutes timo_data matches 10..59 run data modify storage timos-pack:data time.daytime.string set value '[{"text":""},{"score":{"name":"#time_hours","objective":"timo_data"}},{"text":":"},{"score":{"name":"#time_minutes","objective":"timo_data"}}]'
+execute if score #time_hours timo_data matches 10..23 if score #time_minutes timo_data matches 0..9 run data modify storage timos-pack:data time.daytime.string set value '[{"text":""},{"score":{"name":"#time_hours","objective":"timo_data"}},{"text":":0"},{"score":{"name":"#time_minutes","objective":"timo_data"}}]'
+execute if score #time_hours timo_data matches 0..9 if score #time_minutes timo_data matches 10..59 run data modify storage timos-pack:data time.daytime.string set value '[{"text":"0"},{"score":{"name":"#time_hours","objective":"timo_data"}},{"text":":"},{"score":{"name":"#time_minutes","objective":"timo_data"}}]'
+execute if score #time_hours timo_data matches 0..9 if score #time_minutes timo_data matches 0..9 run data modify storage timos-pack:data time.daytime.string set value '[{"text":"0"},{"score":{"name":"#time_hours","objective":"timo_data"}},{"text":":0"},{"score":{"name":"#time_minutes","objective":"timo_data"}}]'
 #create trigger for time function
 scoreboard players enable @a show_time
 execute as @a at @s if score @s show_time matches 1.. run function minecraft:time
