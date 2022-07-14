@@ -60,7 +60,8 @@ execute if score #dptools repeat matches 1 run function dptools:main
 #trigger for dptools
 scoreboard players enable @a info_dptools-recipes
 execute as @a at @s if score @s info_dptools-recipes matches 1 run function dptools:recipes-info
-execute as @a at @s if score @s info_dptools-recipes matches 2.. run scoreboard players set @s info_dptools-recipes 0
+execute as @a at @s if score @s info_dptools-recipes matches 1.. run scoreboard players set @s info_dptools-recipes 0
+execute as @a at @s if score @s info_dptools-recipes matches ..-1 run function dptools:recipes-info
 execute as @a at @s if score @s info_dptools-recipes matches ..-1 run scoreboard players set @s info_dptools-recipes 0
 
 execute if score #SaplingGrow repeat matches 1 run function commands:sapling-grow/main
