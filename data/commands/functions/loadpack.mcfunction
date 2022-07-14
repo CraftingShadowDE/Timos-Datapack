@@ -58,6 +58,8 @@ execute unless score #antinitwit repeat matches 0 run scoreboard players set #an
 #dptools
 function dptools:init
 execute unless score #dptools repeat matches 0 run scoreboard players set #dptools repeat 1 
+#trigger for dptools
+scoreboard objectives add info_dptools-recipes trigger "dptools-Rezepte anzeigen"
 
 #SaplingGrow
 function commands:sapling-grow/load

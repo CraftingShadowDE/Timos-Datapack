@@ -50,12 +50,18 @@ execute if score #time_hours timo_data matches 10..23 if score #time_minutes tim
 execute if score #time_hours timo_data matches 10..23 if score #time_minutes timo_data matches 0..9 run data modify storage timos-pack:data time.daytime.string set value '[{"text":""},{"score":{"name":"#time_hours","objective":"timo_data"}},{"text":":0"},{"score":{"name":"#time_minutes","objective":"timo_data"}}]'
 execute if score #time_hours timo_data matches 0..9 if score #time_minutes timo_data matches 10..59 run data modify storage timos-pack:data time.daytime.string set value '[{"text":"0"},{"score":{"name":"#time_hours","objective":"timo_data"}},{"text":":"},{"score":{"name":"#time_minutes","objective":"timo_data"}}]'
 execute if score #time_hours timo_data matches 0..9 if score #time_minutes timo_data matches 0..9 run data modify storage timos-pack:data time.daytime.string set value '[{"text":"0"},{"score":{"name":"#time_hours","objective":"timo_data"}},{"text":":0"},{"score":{"name":"#time_minutes","objective":"timo_data"}}]'
-#create trigger for time function
+#trigger for time function
 scoreboard players enable @a show_time
 execute as @a at @s if score @s show_time matches 1.. run function minecraft:time
 execute as @a at @s if score @s show_time matches ..-1 run function minecraft:time
 
+#dptools
 execute if score #dptools repeat matches 1 run function dptools:main
+#trigger for dptools
+scoreboard players enable @a info_dptools-recipes
+execute as @a at @s if score @s info_dptools-recipes matches 1 run function dptools:recipes-info
+execute as @a at @s if score @s info_dptools-recipes matches 2.. run scoreboard players set @s info_dptools-recipes 0
+execute as @a at @s if score @s info_dptools-recipes matches ..-1 run scoreboard players set @s info_dptools-recipes 0
 
 execute if score #SaplingGrow repeat matches 1 run function commands:sapling-grow/main
 
@@ -67,7 +73,7 @@ execute as @a at @s if score @s toggle_night-vision matches ..-1 run effect clea
 execute as @a at @s if score @s toggle_night-vision matches 2.. run scoreboard players set @s toggle_night-vision 0
 execute as @a at @s if score @s toggle_night-vision matches ..-1 run scoreboard players set @s toggle_night-vision 0
 
-#create trigger for time function
+#trigger for killme
 scoreboard players enable @a kill-me
 execute as @a at @s if score @s kill-me matches 1.. run kill @s
 execute as @a at @s if score @s kill-me matches ..-1 run kill @s
