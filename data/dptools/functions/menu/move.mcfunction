@@ -14,7 +14,7 @@ execute run scoreboard players operation @s posr1 -= @s pos1
 execute run scoreboard players operation @s posr2 -= @s pos2
 execute run scoreboard players operation @s posr3 -= @s pos3
 execute unless score @s posr1 matches 0 run tag @s add move 
-execute unless score @s posr2 matches 0 run tag @s add move  
+execute unless score @s posr2 matches 0 run tag @s add move
 execute unless score @s posr3 matches 0 run tag @s add move 
 execute run scoreboard players operation @s posr1 = @s pos1
 execute run scoreboard players operation @s posr2 = @s pos2
