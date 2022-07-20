@@ -57,6 +57,8 @@ execute as @a at @s if score @s show_time matches ..-1 run function minecraft:ti
 
 #dptools
 execute if score #dptools repeat matches 1 run function dptools:main
+execute if score #dptools repeat matches 1 run scoreboard players add @a cool 0
+execute if score #dptools repeat matches 1 run scoreboard players add @a sneaktd 0
 #trigger for dptools
 scoreboard players enable @a info_dptools-recipes
 execute as @a at @s if score @s info_dptools-recipes matches 1 run function dptools:recipes-info
