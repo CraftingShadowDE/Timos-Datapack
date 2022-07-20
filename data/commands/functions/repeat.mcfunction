@@ -82,3 +82,18 @@ execute as @a at @s if score @s kill-me matches 1.. run kill @s
 execute as @a at @s if score @s kill-me matches ..-1 run kill @s
 execute as @a at @s if score @s kill-me matches 1.. run scoreboard players set @s kill-me 0
 execute as @a at @s if score @s kill-me matches ..-1 run scoreboard players set @s kill-me 0
+
+#trigger for show_tps
+scoreboard players enable @a show_tps
+execute as @a at @s if score @s show_tps matches 1.. if entity @a[tag=show_tps] unless entity @p[tag=show_tps] run tellraw @p ["",{"text":"TPS-Anzeige:","bold":true,"underlined":true,"color":"dark_red"},"\n",{"text":"Hinweis: ","bold":true,"color":"red"},{"text":"Jemand anders hat vor kurzem diesen trigger verwendet. Bitte warte einen Augenblick, dann werden die TPS allen Spielern im Chat angezeigt. Sollte dies nicht passieren, versuche es später erneut.","color":"red"}]
+execute as @a at @s if score @s show_tps matches ..-1 if entity @a[tag=show_tps] unless entity @p[tag=show_tps] run tellraw @p ["",{"text":"TPS-Anzeige:","bold":true,"underlined":true,"color":"dark_red"},"\n",{"text":"Hinweis: ","bold":true,"color":"red"},{"text":"Jemand anders hat vor kurzem diesen trigger verwendet. Bitte warte einen Augenblick, dann werden die TPS allen Spielern im Chat angezeigt. Sollte dies nicht passieren, versuche es später erneut.","color":"red"}]
+execute as @a at @s if score @s show_tps matches 1.. if entity @a[tag=show_tps] if entity @p[tag=show_tps] run tellraw @p ["",{"text":"TPS-Anzeige:","bold":true,"underlined":true,"color":"dark_red"},"\n",{"text":"Hinweis: ","bold":true,"color":"red"},{"text":"Du hast vor kurzem diesen trigger verwendet. Bitte warte einen Augenblick, dann werden die TPS allen Spielern im Chat angezeigt (Je nach Serverlag variiert die Zeit bis das Ergebnis angezeigt wird). Sollte dies nicht passieren, versuche es später erneut.","color":"red"}]
+execute as @a at @s if score @s show_tps matches ..-1 if entity @a[tag=show_tps] if entity @p[tag=show_tps] run tellraw @p ["",{"text":"TPS-Anzeige:","bold":true,"underlined":true,"color":"dark_red"},"\n",{"text":"Hinweis: ","bold":true,"color":"red"},{"text":"Du hast vor kurzem diesen trigger verwendet. Bitte warte einen Augenblick, dann werden die TPS allen Spielern im Chat angezeigt (Je nach Serverlag variiert die Zeit bis das Ergebnis angezeigt wird). Sollte dies nicht passieren, versuche es später erneut.","color":"red"}]
+execute as @a at @s if score @s show_tps matches 1.. unless entity @a[tag=show_tps] run tag @s add show_tps
+execute as @a at @s if score @s show_tps matches ..-1 unless entity @a[tag=show_tps] run tag @s add show_tps
+execute as @a at @s if score @s show_tps matches 1.. run scoreboard players set @s show_tps 0
+execute as @a at @s if score @s show_tps matches ..-1 run scoreboard players set @s show_tps 0
+execute as @a[tag=show_tps] at @s unless score #timer show_tps matches 1.. run scoreboard players set #show_tps repeat 1
+execute if entity @a[tag=show_tps] unless score #show_tps repeat matches 1 run tag @a remove show_tps
+#show_tps
+execute if score #show_tps repeat matches 1 run function commands:tps/main

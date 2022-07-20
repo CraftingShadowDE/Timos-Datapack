@@ -1,0 +1,1 @@
+execute store success score #success-start-start show_tps run debug start

@@ -73,3 +73,6 @@ scoreboard objectives add toggle_night-vision trigger "Nachtsicht umschalten"
 
 #trigger for killme
 scoreboard objectives add kill-me trigger "Suizid"
+
+#trigger for show_tps
+scoreboard objectives add show_tps trigger "TPS anzeigen"
