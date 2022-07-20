@@ -1,0 +1,5 @@
+wenn jemand den trigger auslöst, wird ein scoreboardwert auf 1 gesetzt und tps/main function wird in loop ausgeführt
+in jedem tick added die function zuerst "1" zu einem Scoreboard
+bei 1 wird debug start gemacht (mit execute store success, wenn 0, dann dem nutzer sagen, dass es abgebrochen wurde und man das funktionasberechtigungslevel prüfen soll)
+bei 20 wird debug stop gemacht (mit execute store result [evtl. storage statt scoreboard, damit es kommazahlen gibt], dann @a anzeigen und zeigen, wer es abgerufen hat)
+bei 21 den scoreboardwert für repeat auf 0 zurück und den timer resetten
